@@ -10,7 +10,7 @@ The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climat
 ## Climate Indices List
 The following indices are provided (Total number: 172):
 
-NOAA Climate indices (42):  
+**NOAA Climate indices (42):**  
 -[PNA](https://www.psl.noaa.gov/data/correlation/pna.data) (1948-2024), 
 Pacific North American Index  
 -[EP/NP](https://www.psl.noaa.gov/data/correlation/epo.data) (1948-2024), 
@@ -96,7 +96,7 @@ Solar Flux (10.7cm)
 -[NAO_MetOffice](https://crudata.uea.ac.uk/cru/data/nao/nao_3dp.dat) (1821-2024), 
 North Atlantic Oscillation Index  
 
-NOAA Climate indices (130):  
+**NCC Climate indices (130):**  
 -[NCC_ATM1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 Northern Hemisphere Subtropical High Area Index  
 -[NCC_ATM2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
