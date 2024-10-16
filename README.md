@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/Hwenshuo/IRCSD/blob/main/assets/IRCSD.png" width="180" height="105"> width="180" height="105"/>
+<img src="https://github.com/Hwenshuo/IRCSD/blob/main/assets/IRCSD.png" width="246" height="251"> 
 </div>
 
 
