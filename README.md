@@ -8,8 +8,9 @@
 The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, standard preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to enhance detection speed and outputs interactive detection results (autocorrelation coefficients, correlation coefficients, lead-lag correlation coefficients, and responses of common air-sea fields). IRCSD is aimed at students and researchers in atmospheric science, particularly in the field of climatology, as well as the public interested in meteorology, with the goal of helping to quickly identify potential source regions of anomalous signals, improving the efficiency of climate change research and reducing data processing time.
 
 ## Climate Indices List
-The following indices are provided (Total number: 271)
+The following indices are provided (Total number: 172):
 
+NOAA Climate indices (42):  
 -[PNA](https://www.psl.noaa.gov/data/correlation/pna.data) (1948-2024), 
 Pacific North American Index  
 -[EP/NP](https://www.psl.noaa.gov/data/correlation/epo.data) (1948-2024), 
@@ -94,6 +95,8 @@ Northeast Brazil Rainfall Anomaly
 Solar Flux (10.7cm)  
 -[NAO_MetOffice](https://crudata.uea.ac.uk/cru/data/nao/nao_3dp.dat) (1821-2024), 
 North Atlantic Oscillation Index  
+
+NOAA Climate indices (130):  
 -[NCC_ATM1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 Northern Hemisphere Subtropical High Area Index  
 -[NCC_ATM2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
