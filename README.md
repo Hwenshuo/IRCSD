@@ -1,10 +1,13 @@
-![IRCSD logo](assets/IRCSD.png)
+<div align=center>
+<img src="https://github.com/Hwenshuo/IRCSD/blob/main/assets/IRCSD.png" width="180" height="105"> width="180" height="105"/>
+</div>
 
-## Interactive Rapid Climate Signal Detection Software
+
+#### Interactive Rapid Climate Signal Detection Software
 
 The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, standard preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to enhance detection speed and outputs interactive detection results (autocorrelation coefficients, correlation coefficients, lead-lag correlation coefficients, and responses of common air-sea fields). IRCSD is aimed at students and researchers in atmospheric science, particularly in the field of climatology, as well as the public interested in meteorology, with the goal of helping to quickly identify potential source regions of anomalous signals, improving the efficiency of climate change research and reducing data processing time.
 
-## The following indices are provided:
+The following indices are provided:
 
 -[PNA](https://www.psl.noaa.gov/data/correlation/pna.data),
 Pacific North American Index  
