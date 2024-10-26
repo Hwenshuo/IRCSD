@@ -5,10 +5,10 @@
 
 ## Introduction
 
-The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, standard preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to enhance detection speed and outputs interactive detection results (autocorrelation coefficients, correlation coefficients, lead-lag correlation coefficients, and responses of common air-sea fields). IRCSD is aimed at students and researchers in atmospheric science, particularly in the field of climatology, as well as the public interested in meteorology, with the goal of helping to quickly identify potential source regions of anomalous signals, improving the efficiency of climate change research and reducing data processing time.
+The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 170 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
-Version: 0.0.7 (Last updated: 2024.10.17)  
+Version: 1.0.0 (Last updated: 2024.10.26)  
 Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
 
 ## Functions
@@ -23,7 +23,7 @@ Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD
 
 
 ## Climate Indices List
-The following indices are provided (Total number: 172):
+The following indices are provided (Total number: 173):
 
 **NOAA Climate Indices (42):**  
 -[PNA](https://www.psl.noaa.gov/data/correlation/pna.data) (1948-2024), 
@@ -186,7 +186,7 @@ North African Subtropical High Northern Boundary Position Index
 -[NCC_ATM36](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 North African-North Atlantic-North American Subtropical High Northern Boundary Position Index  
 -[NCC_ATM37](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-Indian Subtropical High Northern Boundary Position Index  
+Indian Subtropical High Northern Boundary Position Index **!Deprecated for too much missing values(NaN)**   
 -[NCC_ATM38](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 Western Pacific Subtropical High Northern Boundary Position Index  
 -[NCC_ATM39](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
@@ -196,7 +196,7 @@ North American Subtropical High Northern Boundary Position Index
 -[NCC_ATM41](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 Atlantic Subtropical High Northern Boundary Position Index  
 -[NCC_ATM42](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-South China Sea Subtropical High Northern Boundary Position Index  
+South China Sea Subtropical High Northern Boundary Position Index **!Deprecated for too much missing values(NaN)**   
 -[NCC_ATM43](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 North American-Atlantic Subtropical High Northern Boundary Position Index  
 -[NCC_ATM44](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
@@ -270,7 +270,7 @@ Polar-Eurasia Pattern , POL
 -[NCC_ATM78](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 Scandinavia Pattern , SCA  
 -[NCC_ATM79](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-Pacific Transition Pattern, PT  
+Pacific Transition Pattern, PT **!Deprecated for too much missing values(NaN)**  
 -[NCC_ATM80](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 30hPa zonal wind Index  
 -[NCC_ATM81](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
@@ -342,7 +342,7 @@ Tropic Indian Ocean Dipole Index
 -[NCC_OCE26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 South Indian Ocean Dipole Index  
 -[NCC_EXT1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-Cold Air Activity Index  
+Cold Air Activity Index **!Deprecated for too much missing values(NaN)**  
 -[NCC_EXT2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 Western North Pacific Typhoon number  
 -[NCC_EXT3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
@@ -356,7 +356,7 @@ Tropical Pacific Outgoing Long Wave Radiation Index
 -[NCC_EXT7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 Multivariate ENSO Index  
 -[NCC_EXT8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-Pacific Decadal Oscillation Index  
+Pacific Decadal Oscillation Index **!Deprecated for too much missing values(NaN)**  
 -[NCC_EXT9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 Atlantic Meridional Mode SST Index  
 -[NCC_EXT10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
