@@ -8,7 +8,7 @@
 The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 240 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
-Version: 1.0.0 (Last updated: 2024.10.29)  
+Version: 1.0 (Last updated: 2024.10.29)  
 Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
 
 ## Functions
@@ -91,23 +91,23 @@ Hurricane: Atlantic ACE
 Hurricane: NW Pacific ACE  
 -[NPGO](https://psl.noaa.gov/data/timeseries/month/DS/NPGO/) (1950-2024), 
 North Pacific Gyre Oscillation  
--[PDO_ENS](Pacific Decadal Oscillation (PDO): NOAA Physical Sciences Laboratory) (1870-2024), 
+-[PDO_ENS](https://psl.noaa.gov/pdo/) (1870-2024), 
 Pacific Decadal Oscillation calculate from Ensemble Mean  
--[PDO_ERSSTv5](Pacific Decadal Oscillation (PDO): NOAA Physical Sciences Laboratory) (1854-2024), 
+-[PDO_ERSSTv5](https://psl.noaa.gov/pdo/) (1854-2024), 
 Pacific Decadal Oscillation calculate from ERSSTv5  
--[PDO_HadISST_1.1](Pacific Decadal Oscillation (PDO): NOAA Physical Sciences Laboratory) (1870-2024), 
+-[PDO_HadISST_1.1](https://psl.noaa.gov/pdo/) (1870-2024), 
 Pacific Decadal Oscillation calculate from HadISST 1.1  
--[PDO_COBE2](Pacific Decadal Oscillation (PDO): NOAA Physical Sciences Laboratory) (1850-2024), 
+-[PDO_COBE2](https://psl.noaa.gov/pdo/) (1850-2024), 
 Pacific Decadal Oscillation calculate from COBE2  
 -[PDO_CPC](https://psl.noaa.gov/data/timeseries/month/DS/PDO/) (1948-2022), 
 Pacific Decadal Oscillation from CPC  
 -[TPI_HadISST_2](https://psl.noaa.gov/data/timeseries/month/DS/PDOUW/) (1870-2010), 
 Tripole Index for the Interdecadal Pacific Oscillation  
--[TPI_ERSSTv5](Pacific Decadal Oscillation (TPI): NOAA Physical Sciences Laboratory) (1854-2024), 
+-[TPI_ERSSTv5](https://psl.noaa.gov/data/timeseries/IPOTPI/) (1854-2024), 
 TPI (IPO) Tripole Index for the Interdecadal Pacific Oscillation from ERSSTv5  
--[TPI_HadISST_1.1](Pacific Decadal Oscillation (TPI): NOAA Physical Sciences Laboratory) (1870-2024), 
+-[TPI_HadISST_1.1](https://psl.noaa.gov/data/timeseries/IPOTPI/) (1870-2024), 
 TPI (IPO) Tripole Index for the Interdecadal Pacific Oscillation from HadISST 1.1  
--[TPI_COBE](Pacific Decadal Oscillation (TPI): NOAA Physical Sciences Laboratory) (1891-2023), 
+-[TPI_COBE](https://psl.noaa.gov/data/timeseries/IPOTPI/) (1891-2023), 
 TPI (IPO) Tripole Index for the Interdecadal Pacific Oscillation from COBE2  
 -[Tropical Pacific SST EOF](http://psl.noaa.gov/data/climateindices/list/) (1948-2008), 
 Tropical Pacific SST EOF  
@@ -251,255 +251,255 @@ US Tornado Count
 Upper Colorado Basin Temperature  
 -[LeesFerryNatlFlow](https://psl.noaa.gov/data/timeseries/month/DS/LeesFerryFlow/ ) (1905-2017), 
 Lee's Ferry Natural Streamflow (upper CO Basin Streamflow)  
--[NCC_ATM1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM1  
--[NCC_ATM2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM2  
--[NCC_ATM3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM3  
--[NCC_ATM4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM4  
--[NCC_ATM5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM5  
--[NCC_ATM6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM6  
--[NCC_ATM7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM7  
--[NCC_ATM8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM8  
--[NCC_ATM9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM9  
--[NCC_ATM10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM10  
--[NCC_ATM11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM11  
--[NCC_ATM12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM12  
--[NCC_ATM13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM13  
--[NCC_ATM14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM14  
--[NCC_ATM15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM15  
--[NCC_ATM16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM16  
--[NCC_ATM17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM17  
--[NCC_ATM18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM18  
--[NCC_ATM19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM19  
--[NCC_ATM20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM20  
--[NCC_ATM21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM21  
--[NCC_ATM22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM22  
--[NCC_ATM23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM23  
--[NCC_ATM24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM24  
--[NCC_ATM25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM25  
--[NCC_ATM26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM26  
--[NCC_ATM27](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM27](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM27  
--[NCC_ATM28](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM28](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM28  
--[NCC_ATM29](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM29](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM29  
--[NCC_ATM30](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM30](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM30  
--[NCC_ATM31](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM31](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM31  
--[NCC_ATM32](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM32](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM32  
--[NCC_ATM33](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM33](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM33  
--[NCC_ATM34](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM34](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM34  
--[NCC_ATM35](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM35](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM35  
--[NCC_ATM36](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM36](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM36  
--[NCC_ATM38](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM38](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM38  
--[NCC_ATM39](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM39](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM39  
--[NCC_ATM40](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM40](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM40  
--[NCC_ATM41](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM41](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM41  
--[NCC_ATM43](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM43](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM43  
--[NCC_ATM44](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM44](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM44  
--[NCC_ATM45](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM45](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM45  
--[NCC_ATM46](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM46](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM46  
--[NCC_ATM47](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM47](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM47  
--[NCC_ATM48](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM48](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM48  
--[NCC_ATM49](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM49](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM49  
--[NCC_ATM50](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM50](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM50  
--[NCC_ATM51](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM51](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM51  
--[NCC_ATM52](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM52](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM52  
--[NCC_ATM53](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM53](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM53  
--[NCC_ATM54](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM54](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM54  
--[NCC_ATM55](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM55](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM55  
--[NCC_ATM56](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM56](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM56  
--[NCC_ATM57](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM57](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM57  
--[NCC_ATM58](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM58](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM58  
--[NCC_ATM59](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM59](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM59  
--[NCC_ATM60](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM60](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM60  
--[NCC_ATM61](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM61](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM61  
--[NCC_ATM62](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM62](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM62  
--[NCC_ATM63](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM63](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM63  
--[NCC_ATM64](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM64](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM64  
--[NCC_ATM65](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM65](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM65  
--[NCC_ATM66](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM66](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM66  
--[NCC_ATM67](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM67](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM67  
--[NCC_ATM68](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM68](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM68  
--[NCC_ATM69](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM69](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM69  
--[NCC_ATM70](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM70](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM70  
--[NCC_ATM71](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM71](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM71  
--[NCC_ATM72](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM72](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM72  
--[NCC_ATM73](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM73](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM73  
--[NCC_ATM74](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM74](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM74  
--[NCC_ATM75](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM75](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM75  
--[NCC_ATM76](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM76](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM76  
--[NCC_ATM77](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM77](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM77  
--[NCC_ATM78](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM78](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM78  
--[NCC_ATM80](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM80](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM80  
--[NCC_ATM81](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM81](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM81  
--[NCC_ATM82](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM82](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM82  
--[NCC_ATM83](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM83](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM83  
--[NCC_ATM84](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM84](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM84  
--[NCC_ATM85](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM85](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM85  
--[NCC_ATM86](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM86](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM86  
--[NCC_ATM87](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM87](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM87  
--[NCC_ATM88](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_ATM88](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_ATM88  
--[NCC_OCE1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE1  
--[NCC_OCE2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE2  
--[NCC_OCE3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE3  
--[NCC_OCE4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE4  
--[NCC_OCE5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE5  
--[NCC_OCE6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE6  
--[NCC_OCE7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE7  
--[NCC_OCE8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE8  
--[NCC_OCE9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE9  
--[NCC_OCE10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE10  
--[NCC_OCE11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE11  
--[NCC_OCE12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE12  
--[NCC_OCE13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE13  
--[NCC_OCE14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE14  
--[NCC_OCE15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE15  
--[NCC_OCE16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE16  
--[NCC_OCE17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE17  
--[NCC_OCE18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE18  
--[NCC_OCE19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE19  
--[NCC_OCE20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE20  
--[NCC_OCE21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE21  
--[NCC_OCE22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE22  
--[NCC_OCE23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE23  
--[NCC_OCE24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE24  
--[NCC_OCE25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE25  
--[NCC_OCE26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_OCE26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
 NCC_OCE26  
--[NCC_EXT2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT2  
--[NCC_EXT3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT3  
--[NCC_EXT4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT4  
--[NCC_EXT5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT5  
--[NCC_EXT6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT6  
--[NCC_EXT7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT7  
--[NCC_EXT9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT9  
--[NCC_EXT10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT10  
--[NCC_EXT11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT11  
--[NCC_EXT12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT12  
--[NCC_EXT13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT13  
--[NCC_EXT14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT14  
--[NCC_EXT15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT15  
--[NCC_EXT16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951), 
+-[NCC_EXT16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
 NCC_EXT16  
 -[amoc_mean](http://marine.copernicus.eu) (1993-2019), 
 ocean_meridional_overturning_streamfunction  
