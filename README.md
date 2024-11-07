@@ -17,8 +17,8 @@ Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD
 #### Sort by absolute value of correlation coefficient from large to small
 <div align="center">
   <video 
-    width="300"
-    style="max-width: 100%; display: block; margin: 20px auto;"
+    width="400"
+    style="max-width: 100%; display: block; margin: 10px auto;"
     src="https://github.com/user-attachments/assets/09187ee9-87e4-4a00-9419-afb5ac50a929"
     controls
     playsinline
@@ -26,12 +26,12 @@ Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD
   </video>
 </div>
 
-### Calculate leads-lagged correlation
+### Calculate lead-lagged correlation
 #### Sort by the largest absolute value of lead-lag correlation coefficient from large to small
 <div align="center">
   <video 
-    width="300"
-    style="max-width: 100%; display: block; margin: 20px auto;"
+    width="400"
+    style="max-width: 100%; display: block; margin: 10px auto;"
     src="https://github.com/user-attachments/assets/d4805da6-9674-429f-9d97-173338fcbc50"
     controls
     playsinline
@@ -42,9 +42,9 @@ Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD
 ### Calculate sliding correlation
 <div align="center">
   <video 
-    width="300"
-    style="max-width: 100%; display: block; margin: 20px auto;"
-    src="https://github.com/user-attachments/assets/09187ee9-87e4-4a00-9419-afb5ac50a929"
+    width="400"
+    style="max-width: 100%; display: block; margin: 10px auto;"
+    src="https://github.com/user-attachments/assets/07d241f3-67ee-4658-8d05-188b0dd4e526"
     controls
     playsinline
   >
