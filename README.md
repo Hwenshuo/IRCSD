@@ -27,7 +27,7 @@ Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD
 </div>
 
 ### Calculate lead-lagged correlation
-#### Sort by the largest absolute value of lead-lag correlation coefficient from large to small
+#### Sort by the largest absolute value of lead-lagged correlation coefficient from large to small
 <div align="center">
   <video 
     width="400"
