@@ -9,7 +9,7 @@ The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climat
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
 Version: 1.1 (Last updated: 2024.11.06)  
-Resource Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
+Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
 
 ## Functions
 
