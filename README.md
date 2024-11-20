@@ -2,11 +2,11 @@
 <img src="https://github.com/Hwenshuo/IRCSD/blob/main/assets/IRCSD.png" width="246" height="251"> 
 </div>
 
-<h2 align="center">Enjoy your journey of climate change research~</h2>
+<h1 align="center">Enjoy your journey of climate change research~</h2>
 
 ## 👋 Introduction
 
-**The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 260 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
+**The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over **260** common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
 Version: 1.4 (Last updated: 2024.11.20)  
