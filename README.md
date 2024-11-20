@@ -2,18 +2,19 @@
 <img src="https://github.com/Hwenshuo/IRCSD/blob/main/assets/IRCSD.png" width="246" height="251"> 
 </div>
 
+<h2 align="center">Enjoy your journey of climate change research~</h2>
 
-## Introduction
+## 👋 Introduction
 
-The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 260 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
+**The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 260 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
 Version: 1.4 (Last updated: 2024.11.20)  
 Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
-Documentation: [Only in Chinese NoW](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink) 
+Documentation: [Only in Chinese NoW](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
 IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) 
 
-## Functions
+## 💫 Functions
 
 ### Calculate correlation：
 #### Sort by absolute value of correlation coefficient from large to small
@@ -24,8 +25,8 @@ IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/)
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/lead-lagged_correlation_example.gif)   
 
 
-## Climate Indices List
-The following indices are provided (Total number: 258):
+## 🚀 Climate Indices List
+The following indices are provided (Total number: 263):
 
 -[Niño 1+2 (HadISST) ](https://psl.noaa.gov/data/timeseries/month/DS/Nino12/) (1870-2024), 
 Niño 1+2 (HadISST)   
@@ -553,3 +554,9 @@ he Ningaloo Niño index (NNI)
 the Southern Atlantic Subtropical Dipole index (SASD)  
 -[SINTEX_SIOD](https://www.jamstec.go.jp/aplinfo/sintexf/e/seasonal/data_download.html) (1982-2024), 
 the Indian Ocean Subtropical Dipole index (SIOD)  
+
+## 🤗 Contributors
+
+If you are interested in IRCSD development, please don't hesitate to become a contributor!
+
+[![Contributors](https://contrib.rocks/image?repo=Hwenshuo/IRCSD)](https://github.com/Hwenshuo/IRCSD/graphs/contributors)
