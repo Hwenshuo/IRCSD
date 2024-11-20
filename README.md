@@ -16,7 +16,7 @@ IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/)
 
 ## 💫 Functions
 
-### Calculate correlation：
+### Calculate correlation
 #### Sort by absolute value of correlation coefficient from large to small
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/correlation_example.gif)   
 
