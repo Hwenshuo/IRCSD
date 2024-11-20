@@ -11,7 +11,7 @@
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
 Version: 1.4 (Last updated: 2024.11.20)  
 Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
-Documentation: [Only in Chinese NoW](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
+Documentation: [Only in Chinese Now](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
 IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) 
 
 ## 💫 Functions
@@ -20,9 +20,12 @@ IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/)
 #### Sort by absolute value of correlation coefficient from large to small
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/correlation_example.gif)   
 
-### Calculate leads-lagged correlation
+### Calculate lead-lagged correlation
 #### Sort by the largest absolute value of lead-lag correlation coefficient from large to small
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/lead-lagged_correlation_example.gif)   
+
+### Calculate sliding correlation
+![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/sliding_correlation_example.gif)   
 
 
 ## 🚀 Climate Indices List
