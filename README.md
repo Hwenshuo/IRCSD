@@ -5,51 +5,24 @@
 
 ## Introduction
 
-The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 250 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, power spectrum, correlation coefficients, lead-lag correlation coefficients, and responses of common air-sea fields). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
+The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and employing different filtering methods and types, to compute the correlation between the signal and over 260 common climate indices (such as atmospheric, oceanic, and sea ice indices). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (signal time series, correlation, lead-lag correlation, and sliding correlation). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.
 
 Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
-Version: 1.1 (Last updated: 2024.11.06)  
+Version: 1.4 (Last updated: 2024.11.20)  
 Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
+Documentation: [Only in Chinese NoW](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink) 
+IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) 
 
 ## Functions
 
-### Calculate correlation
+### Calculate correlation：
 #### Sort by absolute value of correlation coefficient from large to small
-<div align="center">
-  <video 
-    width="400"
-    style="max-width: 100%; display: block; margin: 10px auto;"
-    src="https://github.com/user-attachments/assets/09187ee9-87e4-4a00-9419-afb5ac50a929"
-    controls
-    playsinline
-  >
-  </video>
-</div>
+![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/correlation_example.gif)   
 
-### Calculate lead-lagged correlation
-#### Sort by the largest absolute value of lead-lagged correlation coefficient from large to small
-<div align="center">
-  <video 
-    width="400"
-    style="max-width: 100%; display: block; margin: 10px auto;"
-    src="https://github.com/user-attachments/assets/d4805da6-9674-429f-9d97-173338fcbc50"
-    controls
-    playsinline
-  >
-  </video>
-</div>
+### Calculate leads-lagged correlation
+#### Sort by the largest absolute value of lead-lag correlation coefficient from large to small
+![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/lead-lagged_correlation_example.gif)   
 
-### Calculate sliding correlation
-<div align="center">
-  <video 
-    width="400"
-    style="max-width: 100%; display: block; margin: 10px auto;"
-    src="https://github.com/user-attachments/assets/07d241f3-67ee-4658-8d05-188b0dd4e526"
-    controls
-    playsinline
-  >
-  </video>
-</div>
 
 ## Climate Indices List
 The following indices are provided (Total number: 258):
@@ -285,255 +258,265 @@ Upper Colorado Basin Temperature
 -[LeesFerryNatlFlow](https://psl.noaa.gov/data/timeseries/month/DS/LeesFerryFlow/ ) (1905-2017), 
 Lee's Ferry Natural Streamflow (upper CO Basin Streamflow)  
 -[NCC_ATM1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM1  
+Northern Hemisphere Subtropical High Area Index   
 -[NCC_ATM2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM2  
+North African Subtropical High Area Index   
 -[NCC_ATM3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM3  
+North African-North Atlantic-North American Subtropical High Area Index   
 -[NCC_ATM4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM4  
+Indian Subtropical High Area Index  
 -[NCC_ATM5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM5  
+Western Pacific Subtropical High Area Index  
 -[NCC_ATM6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM6  
+Eastern Pacific Subtropical High Area Index  
 -[NCC_ATM7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM7  
+North American Subtropical High Area Index  
 -[NCC_ATM8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM8  
+Atlantic Subtropical High Area Index  
 -[NCC_ATM9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM9  
+South China Sea Subtropical High Area Index  
 -[NCC_ATM10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM10  
+North American-Atlantic Subtropical High Area Index  
 -[NCC_ATM11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM11  
+Pacific Subtropical High Area Index   
 -[NCC_ATM12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM12  
+Northern Hemisphere Subtropical High Intensity Index  
 -[NCC_ATM13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM13  
+North African Subtropical High Intensity Index  
 -[NCC_ATM14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM14  
+North African-North Atlantic-North American Subtropical High Intensity Index  
 -[NCC_ATM15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM15  
+Indian Subtropical High Intensity Index  
 -[NCC_ATM16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM16  
+Western Pacific Subtropical High Intensity Index  
 -[NCC_ATM17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM17  
+Eastern Pacific Subtropical High Intensity Index  
 -[NCC_ATM18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM18  
+North American Subtropical High Intensity Index  
 -[NCC_ATM19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM19  
+North Atlantic Subtropical High Intensity Index  
 -[NCC_ATM20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM20  
+South China Sea Subtropical High Intensity Index  
 -[NCC_ATM21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM21  
+North American-North Atlantic Subtropical High Intensity Index  
 -[NCC_ATM22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM22  
+Pacific Subtropical High Intensity Index  
 -[NCC_ATM23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM23  
+Northern Hemisphere Subtropical High Ridge Position Index  
 -[NCC_ATM24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM24  
+North African Subtropical High Ridge Position Index  
 -[NCC_ATM25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM25  
+North African-North Atlantic-North American Subtropical High Ridge Position Index  
 -[NCC_ATM26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM26  
+Indian Subtropical High Ridge Position Index  
 -[NCC_ATM27](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM27  
+Western Pacific Subtropical High Ridge Position Index  
 -[NCC_ATM28](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM28  
+Eastern Pacific Subtropical High Ridge Position Index  
 -[NCC_ATM29](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM29  
+North American Subtropical High Ridge Position Index  
 -[NCC_ATM30](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM30  
+Atlantic Sub Tropical High Ridge Position Index  
 -[NCC_ATM31](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM31  
+South China Sea Subtropical High Ridge Position Index  
 -[NCC_ATM32](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM32  
+North American-North Atlantic Subtropical High Ridge Position Index  
 -[NCC_ATM33](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM33  
+Pacific Subtropical High Ridge Position Index  
 -[NCC_ATM34](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM34  
+Northern Hemisphere Subtropical High Northern Boundary Position Index  
 -[NCC_ATM35](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM35  
+North African Subtropical High Northern Boundary Position Index  
 -[NCC_ATM36](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM36  
+North African-North Atlantic-North American Subtropical High Northern Boundary Position Index  
+-[NCC_ATM37](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
+ Indian Subtropical High Northern Boundary Position Index  
 -[NCC_ATM38](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM38  
+Western Pacific Subtropical High Northern Boundary Position Index  
 -[NCC_ATM39](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM39  
+Eastern Pacific Subtropical High Northern Boundary Position Index  
 -[NCC_ATM40](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM40  
+North American Subtropical High Northern Boundary Position Index  
 -[NCC_ATM41](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM41  
+Atlantic Subtropical High Northern Boundary Position Index  
+-[NCC_ATM42](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
+South China Sea Subtropical High Northern Boundary Position Index  
 -[NCC_ATM43](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM43  
+North American-Atlantic Subtropical High Northern Boundary Position Index  
 -[NCC_ATM44](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM44  
+Pacific Subtropical High Northern Boundary Position Index  
 -[NCC_ATM45](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM45  
+Western Pacific Sub Tropical High Western Ridge Point Index  
 -[NCC_ATM46](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM46  
+Asia Polar Vortex Area Index  
 -[NCC_ATM47](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM47  
+Pacific Polar Vortex Area Index  
 -[NCC_ATM48](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM48  
+North American Polar Vortex Area Index  
 -[NCC_ATM49](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM49  
+Atlantic-European Polar Vortex Area Index  
 -[NCC_ATM50](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM50  
+Northern Hemisphere Polar Vortex Area Index  
 -[NCC_ATM51](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM51  
+Asia Polar Vortex Intensity Index  
 -[NCC_ATM52](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM52  
+Pacific Polar Vortex Intensity Index  
 -[NCC_ATM53](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM53  
+North American Polar Vortex Intensity Index  
 -[NCC_ATM54](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM54  
+Atlantic-European Polar Vortex Intensity Index  
 -[NCC_ATM55](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM55  
+Northern Hemisphere Polar Vortex Intensity Index  
 -[NCC_ATM56](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM56  
+Northern Hemisphere Polar Vortex Central Longitude Index  
 -[NCC_ATM57](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM57  
+Northern Hemisphere Polar Vortex Central Latitude Index   
 -[NCC_ATM58](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM58  
+Northern Hemisphere Polar Vortex Central Intensity Index  
 -[NCC_ATM59](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM59  
+Eurasian Zonal Circulation Index  
 -[NCC_ATM60](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM60  
+Eurasian Meridional Circulation Index  
 -[NCC_ATM61](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM61  
+Asian Zonal Circulation Index  
 -[NCC_ATM62](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM62  
+Asian Meridional Circulation Index  
 -[NCC_ATM63](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM63  
+East Asian Trough Position Index  
 -[NCC_ATM64](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM64  
+East Asian Trough Intensity Index  
 -[NCC_ATM65](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM65  
+Tibet Plateau Region 1 Index  
 -[NCC_ATM66](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM66  
+Tibet Plateau Region 2 Index  
 -[NCC_ATM67](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM67  
+India-Burma Trough Intensity Index  
 -[NCC_ATM68](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM68  
+Arctic Oscillation, AO  
 -[NCC_ATM69](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM69  
+Antarctic Oscillation, AAO  
 -[NCC_ATM70](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM70  
+North Atlantic Oscillation , NAO  
 -[NCC_ATM71](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM71  
+Pacific/ North American Pattern , PNA  
 -[NCC_ATM72](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM72  
+East Atlantic Pattern, EA  
 -[NCC_ATM73](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM73  
+West Pacific Pattern, WP  
 -[NCC_ATM74](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM74  
+North Pacific Pattern, NP  
 -[NCC_ATM75](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM75  
+East Atlantic-West Russia Pattern, EA/WR  
 -[NCC_ATM76](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM76  
+Tropical-Northern Hemisphere Pattern, TNH  
 -[NCC_ATM77](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM77  
+Polar-Eurasia Pattern, POL  
 -[NCC_ATM78](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM78  
+Scandinavia Pattern, SCA  
+-[NCC_ATM79](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
+Pacific Transition Pattern, PT  
 -[NCC_ATM80](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM80  
+30hPa zonal wind Index  
 -[NCC_ATM81](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM81  
+50 hPa zonal wind Index  
 -[NCC_ATM82](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM82  
+Mid-Eastern Pacific 200mb Zonal Wind Index   
 -[NCC_ATM83](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM83  
+West Pacific 850mb Trade Wind Index   
 -[NCC_ATM84](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM84  
+ Central Pacific 850mb Trade Wind Index  
 -[NCC_ATM85](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM85  
+East Pacific 850mb Trade Wind Index  
 -[NCC_ATM86](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM86  
+Atlantic-European Circulation W Pattern Index  
 -[NCC_ATM87](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM87  
+Atlantic-European Circulation C Pattern Index  
 -[NCC_ATM88](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_ATM88  
+Atlantic-European Circulation E Pattern Index  
 -[NCC_OCE1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE1  
+NINO 1+2 SSTA Index  
 -[NCC_OCE2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE2  
+NINO 3 SSTA Index  
 -[NCC_OCE3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE3  
+NINO 4 SSTA Index  
 -[NCC_OCE4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE4  
+NINO 3.4 SSTA Index  
 -[NCC_OCE5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE5  
+NINO W SSTA Index  
 -[NCC_OCE6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE6  
+NINO C SSTA Index  
 -[NCC_OCE7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE7  
+NINO A SSTA Index  
 -[NCC_OCE8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE8  
+NINO B SSTA Index  
 -[NCC_OCE9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE9  
+NINO Z SSTA Index  
 -[NCC_OCE10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE10  
+Tropical Northern Atlantic SST Index  
 -[NCC_OCE11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE11  
+Tropical Southern Atlantic SST Index  
 -[NCC_OCE12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE12  
+Western Hemisphere Warm Pool Index  
 -[NCC_OCE13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE13  
+Indian Ocean Warm Pool Area Index   
 -[NCC_OCE14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE14  
+Indian Ocean Warm Pool Strength Index  
 -[NCC_OCE15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE15  
+Western Pacific Warm Pool Area Index  
 -[NCC_OCE16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE16  
+Western Pacific Warm Pool Strength index  
 -[NCC_OCE17](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE17  
+Atlantic Multi-decadal Oscillation Index  
 -[NCC_OCE18](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE18  
+Oyashio Current SST Index  
 -[NCC_OCE19](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE19  
+West Wind Drift Current SST Index  
 -[NCC_OCE20](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE20  
+Kuroshio Current SST Index  
 -[NCC_OCE21](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE21  
+ENSO Modoki Index   
 -[NCC_OCE22](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE22  
+Warm-pool ENSO Index  
 -[NCC_OCE23](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE23  
+Cold-tongue ENSO Index  
 -[NCC_OCE24](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE24  
+Indian Ocean Basin-Wide Index  
 -[NCC_OCE25](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE25  
+Tropic Indian Ocean Dipole Index  
 -[NCC_OCE26](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2023), 
-NCC_OCE26  
+South Indian Ocean Dipole Index  
+-[NCC_EXT1](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
+Cold Air Activity Index  
 -[NCC_EXT2](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT2  
+Western North Pacific Typhoon number  
 -[NCC_EXT3](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT3  
+Number of Landing Typhoon on China  
 -[NCC_EXT4](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT4  
+Total Sunspot Number Index  
 -[NCC_EXT5](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT5  
+Southern Oscillation Index  
 -[NCC_EXT6](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT6  
+Tropical Pacific Outgoing Long Wave Radiation Index  
 -[NCC_EXT7](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT7  
+Multivariate ENSO Index  
+-[NCC_EXT8](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
+Pacific Decadal Oscillation Index  
 -[NCC_EXT9](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT9  
+Atlantic Meridional Mode SST Index  
 -[NCC_EXT10](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT10  
+Quasi-Biennial Oscillation Index  
 -[NCC_EXT11](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT11  
+Globally Integrated Angular Momentum Index  
 -[NCC_EXT12](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT12  
+Solar Flux Index  
 -[NCC_EXT13](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT13  
+Equatorial Pacific 130°E-80°W Upper 300m temperature averaged anomaly index   
 -[NCC_EXT14](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT14  
+Equatorial Pacific 160°E-80°W Upper 300m temperature Average anomaly index  
 -[NCC_EXT15](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT15  
+Equatorial Pacific 180º-100ºW Upper 300m temperature Average anomaly index  
 -[NCC_EXT16](http://cmdp.ncc-cma.net/Monitoring/cn_index_130.php) (1951-2021), 
-NCC_EXT16  
+North Atlantic Triple index  
 -[amoc_mean](http://marine.copernicus.eu) (1993-2019), 
 ocean_meridional_overturning_streamfunction  
 -[amoc_std](http://marine.copernicus.eu) (1993-2019), 
@@ -552,11 +535,11 @@ Marshall Southern Annular Mode (SAM) Index (Station-based)
 Southern Annular Mode (SAM) Index (20CRV3-based)  
 -[SAM_20crv2c](https://psl.noaa.gov/data/20thC_Rean/timeseries/monthly/SAM/) (1851-2011), 
 Southern Annular Mode (SAM) Index (20crv2c-based)  
--[PJ_huang04](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2023), 
+-[PJ_huang04](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2024), 
 Pacific-Japan teleconnection index defined by Huang04  
--[PJ_noh21](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2023), 
+-[PJ_noh21](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2024), 
 Pacific-Japan teleconnection index defined by Noh21  
--[PJ_ling22](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2023), 
+-[PJ_ling22](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023GL106982) (1940-2024), 
 Pacific-Japan teleconnection index defined by ling21  
 -[SINTEX_ATL3](https://www.jamstec.go.jp/aplinfo/sintexf/e/seasonal/data_download.html) (1982-2024), 
 the Atlantic Niño index (ATL3)  
