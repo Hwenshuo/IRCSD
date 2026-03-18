@@ -1,0 +1,12 @@
+/* @font-face {
+    font-family: "whitney";
+    src: url("whitneybook.otf") format("opentype");
+    } */
+@font-face {
+    font-family: "harding";
+    src: url("Harding.ttf") format("truetype");
+    }
+
+*, html, body {
+    font-family: "harding", sans-serif;
+    }
