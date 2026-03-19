@@ -17,8 +17,7 @@ def txt_climate_indices_load(indices_name):
     """
     load origin txt climate indices to xarray
     """
-    # climate_indices_dir = "/home/huangwenshuo/Program/RCSD/data/climate_indices" #linux
-    climate_indices_dir = "../data/climate_indices" #windows
+    climate_indices_dir = "../data/climate_indices" 
     path_list = []
     # 递归获得文件夹和子文件夹下所有文件名
     for root,dirs,files in os.walk(climate_indices_dir):

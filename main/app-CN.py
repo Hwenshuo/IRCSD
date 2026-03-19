@@ -102,7 +102,7 @@ app.layout = html.Div([
     html.B("0. 软件介绍", style={'color':"#de420d"}),
     html.P([
         'Interactive Rapid Climate Signal Detection Software (IRCSD) 是一个基于Dash和Python开发的快速气候信号检测软件。对于输入的未知气候信号，IRCSD集合了多种常见的气候统计方法，包括选取时间范围、数据预处理、去趋势、应用不同的滤波方法和滤波种类等，以计算未知信号与260多种气候指数（如大气、海洋、海冰等指数，见',
-        html.A('IRCSD气候指数数据库', href='https://github.com/Hwenshuo/IRCSD', target='_blank'),
+        html.A('IRCSD气候指数数据库', href='https://github.com/Hwenshuo/IRCSD#-climate-indices-list', target='_blank'),
         '）的关联性。IRCSD采用并行计算以加快检测速度，并能批量输出可交互式的检测结果（包括信号时间序列、功率谱、相关系数、超前滞后相关系数、滑动相关系数、梁氏信息流等）。IRCSD主要面向大气科学领域的科研人员，以及对气候变化感兴趣的公众，其目的是为了帮助快速定位异常信号的可能来源，提高气候变化研究的效率。'
     ],
             style={
