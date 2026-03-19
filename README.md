@@ -4,22 +4,20 @@
 
 <h1 align="center">Enjoy your journey of climate change research~</h2>
 
-> [!NOTE]
-> Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
-> Version: 2.0 (Last updated: 2026.03.18)  
-> Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
-> Documentation: [中文文档](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
-> IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) - **Testing Temporarily Suspended！**
+> [NOTE]
+> **Author**: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
+> **Version**: 2.0 (Last updated: 2026.03.18)  
+> **Source Code/Indices Infos**: https://github.com/Hwenshuo/IRCSD  
+> **Documentation**: [中文文档](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
+> **IRCSD Online**: [Beta Version](http://113.44.134.87:8050/) - *Testing Temporarily Suspended*
 
 ## 👋 Introduction
 
-**The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various statistical methods, including time range selection, data preprocessing, detrending, and the application of different filtering methods and types, to compute correlations between the input signal and approximately **260** commonly used climate indices (e.g., atmospheric, oceanic, and sea ice indices).
-
-It employs parallel computing to accelerate the detection process and provides interactive outputs, including signal time series, correlation analysis, lead–lag relationships, and sliding correlations. IRCSD is designed for both atmospheric science researchers and the general public interested in climate change. The goal of IRCSD is to facilitate the rapid identification of potential source regions of anomalous signals and to improve the efficiency of climate research.
+**The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various statistical methods, including time range selection, data preprocessing, detrending, and the application of different filtering methods and types, to compute correlations between the input signal and approximately **260** commonly used climate indices (e.g., atmospheric, oceanic, and sea ice indices). It employs parallel computing to accelerate the detection process and provides interactive outputs, including signal time series, correlation analysis, lead–lag relationships, and sliding correlations. IRCSD is designed for both atmospheric science researchers and the general public interested in climate change. The goal of IRCSD is to facilitate the rapid identification of potential source regions of anomalous signals and to improve the efficiency of climate research.
 
 ## 🚀 Installation
 
-### I：直接运行 (Windows, Linux or MacOS)
+### I：Local (Windows, Linux or MacOS)
 
 1. Download
 
@@ -38,18 +36,21 @@ It employs parallel computing to accelerate the detection process and provides i
 3. Run
 
     ```sh
-    cd /IRCSD/main
+    cd main
+    conda activate IRCSD
     python app-CN.py
     ```
 
 ## 💫 Main Functions
 
 ### 1. Calculate correlation
-#### Sort by absolute value of correlation coefficient from large to small
+> [!IMPORTANT]
+> Sort by absolute value of correlation coefficient from large to small
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/correlation_example.gif)   
 
 ### 2. Calculate lead-lagged correlation
-#### Sort by the largest absolute value of lead-lag correlation coefficient from large to small
+> [!IMPORTANT]
+> Sort by the largest absolute value of lead-lag correlation coefficient from large to small
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/lead-lagged_correlation_example.gif)   
 
 ### 3.Calculate sliding correlation
