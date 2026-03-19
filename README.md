@@ -4,7 +4,7 @@
 
 <h1 align="center">Enjoy your journey of climate change research~</h2>
 
-> [NOTE]
+> [!NOTE]  
 > **Author**: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
 > **Version**: 2.0 (Last updated: 2026.03.18)  
 > **Source Code/Indices Infos**: https://github.com/Hwenshuo/IRCSD  
@@ -46,11 +46,13 @@
 ### 1. Calculate correlation
 > [!IMPORTANT]
 > Sort by absolute value of correlation coefficient from large to small
+
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/correlation_example.gif)   
 
 ### 2. Calculate lead-lagged correlation
 > [!IMPORTANT]
 > Sort by the largest absolute value of lead-lag correlation coefficient from large to small
+
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/lead-lagged_correlation_example.gif)   
 
 ### 3.Calculate sliding correlation
