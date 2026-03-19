@@ -9,7 +9,7 @@
 > **Version**: 2.0 (Last updated: 2026.03.18)  
 > **Climate Indices Infos**: https://github.com/Hwenshuo/IRCSD#-climate-indices-list  
 > **Documentation**: [中文文档](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
-> **IRCSD Online**: [Beta Version](http://113.44.134.87:8050/) - *Testing Temporarily Suspended!*
+> **IRCSD Online (Server: 2C2G)**: [Beta Version](http://113.44.134.87:8050/) - *Only for testing*
 
 ## 👋 Introduction
 
@@ -19,7 +19,7 @@
 
 ## 🚀 Installation
 
-### I：Local (Windows, Linux or MacOS)
+### Windows, Linux or MacOS
 
 1. Download
 
