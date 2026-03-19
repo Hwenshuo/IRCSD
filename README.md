@@ -4,18 +4,43 @@
 
 <h1 align="center">Enjoy your journey of climate change research~</h2>
 
+> [!NOTE]
+> Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
+> Version: 2.0 (Last updated: 2026.03.18)  
+> Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
+> Documentation: [中文文档](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
+> IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) - **Testing Temporarily Suspended！**
+
 ## 👋 Introduction
 
 **The Interactive Rapid Climate Signal Detection Software (IRCSD)** is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various statistical methods, including time range selection, data preprocessing, detrending, and the application of different filtering methods and types, to compute correlations between the input signal and approximately **260** commonly used climate indices (e.g., atmospheric, oceanic, and sea ice indices).
 
 It employs parallel computing to accelerate the detection process and provides interactive outputs, including signal time series, correlation analysis, lead–lag relationships, and sliding correlations. IRCSD is designed for both atmospheric science researchers and the general public interested in climate change. The goal of IRCSD is to facilitate the rapid identification of potential source regions of anomalous signals and to improve the efficiency of climate research.
 
+## 🚀 Installation
 
-Author: Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)   
-Version: 2.0 (Last updated: 2026.03.18)  
-Source Code/Indices Infos: https://github.com/Hwenshuo/IRCSD  
-Documentation: [中文文档](https://fe3c4y0lh0.feishu.cn/docx/JpTIdVnPDoNH1kxFvwVcEiz8nsf?from=from_copylink)  
-IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) - **Testing Temporarily Suspended**
+### I：直接运行 (Windows, Linux or MacOS)
+
+1. Download
+
+    ```sh
+    git clone --depth=1 https://github.com/Hwenshuo/IRCSD.git
+    cd IRCSD
+    ```
+
+2. Install Conda Environment
+
+    ```sh
+    mkdir -p <conda_path>/envs/IRCSD
+    tar -xzf IRCSD_env.tar.gz -C <conda_path>/envs/IRCSD
+    ```
+
+3. Run
+
+    ```sh
+    cd /IRCSD/main
+    python app-CN.py
+    ```
 
 ## 💫 Main Functions
 
@@ -31,7 +56,7 @@ IRCSD Online Website: [Beta Version](http://113.44.134.87:8050/) - **Testing Tem
 ![image](https://github.com/Hwenshuo/IRCSD/blob/main/assets/sliding_correlation_example.gif)   
 
 
-## 🚀 Climate Indices List
+## ⭐ Climate Indices List
 The following indices are provided (Total number: 259):
 
 -[Niño 1+2 (HadISST) ](https://psl.noaa.gov/data/timeseries/month/DS/Nino12/) (1870-2025), 
