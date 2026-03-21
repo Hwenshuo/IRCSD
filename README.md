@@ -31,7 +31,7 @@
 2. Install Conda Environment
 
     ```sh
-    conda env create -f IRCSD.yml
+    conda env create -f IRCSD.yaml
     conda activate IRCSD
     ```
 
