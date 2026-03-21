@@ -24,7 +24,7 @@
 1. Download
 
     ```sh
-    git clone https://github.com/Hwenshuo/IRCSD.git
+    git clone --depth=1 https://github.com/Hwenshuo/IRCSD.git
     cd IRCSD
     ```
 
@@ -32,12 +32,12 @@
 
     ```sh
     conda env create -f IRCSD.yml
+    conda activate IRCSD
     ```
 
 3. Run
 
     ```sh
-    conda activate IRCSD
     cd main
     python app-CN.py #or app-EN.py
     ```
