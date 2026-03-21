@@ -1313,5 +1313,5 @@ def update_graphs(n_clicks, stored_data, signal_yrST0, signal_yrED0, RI_time_sel
 # 运行 Dash 应用
 if __name__ == '__main__':  
     webbrowser.open("http://127.0.0.1:8050")# 自动打开web
-    app.run_server(debug=True, port=8050) #本地离线运行
-    # app.run_server(debug=True, host='0.0.0.0', port=8050) #服务器在线运行
+    app.run(debug=True, port=8050) #本地离线运行
+    # app.run(debug=True, host='0.0.0.0', port=8050) #服务器在线运行
