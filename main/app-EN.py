@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 # 数据分析模块 #
 import os
 import numpy as np
@@ -41,6 +44,7 @@ from RI_initialization import RI_init
 import power_spectral_density as psd
 import pyleoclim as pyleo
 
+
 ## for ccrc version ##
 # #close flask warining if debug mode is off
 # import logging
@@ -81,18 +85,26 @@ du.configure_upload(app, folder='temp')
 app.layout = html.Div([
     html.Img(src='./assets/IRCSD.png', style={'display': 'block', 'margin': '0 auto', 'width': '120px', 'marginBottom': '5px'}),
     html.H1('Interactive Rapid Climate Signal Detection Software (IRCSD)', style={'textAlign': 'center', 'fontSize': '30px', 'marginTop': '0'}),
-    html.P([html.Strong('Author: '),
-            'Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn) ',
-            html.Strong('Version: '), '1.4 (Last updated: 2024.11.20) ',
-            html.Strong('Source Code/Indices Infos: '),
-            html.A(html.Img(
-                src='assets/github-mark.png',  # 假设图标位于assets文件夹中
-                style={'height': '20px', 'width': 'auto'}  # 调整图标大小
+    html.P([
+        html.Strong('Author: '),
+        html.Span('Wenshuo Huang (huangwenshuo21@mails.ucas.ac.cn)',
+                style={'marginRight': '20px'}),
+
+        html.Strong('Version: '),
+        html.Span('2.0 (Last updated: 2026.03.18)',
+                style={'marginRight': '20px'}),
+
+        html.Strong('Repository: '),
+        html.A(
+            html.Img(
+                src='assets/github-mark.png',
+                style={'height': '20px', 'width': 'auto'}
             ),
-            href='https://github.com/Hwenshuo/IRCSD')]
-            ,style={'textAlign': 'center'}),
+            href='https://github.com/Hwenshuo/IRCSD'
+        )
+    ], style={'textAlign': 'center'}),
     html.B("0. README", style={'color':"#de420d"}),
-    html.P('The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and applying different filtering methods and types, to compute the correlation between the signal and over 260 common climate indices (such as atmospheric, oceanic, and sea ice indices, etc.). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (including signal time series, power spectrum, correlation coefficients, lead-lagged correlation coefficients, sliding correlation coefficient, and Liang-Kleeman Information Flow). IRCSD is designed for students and researchers in atmospheric science, particularly those in the field of climatology, as well as for the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.',
+    html.P('The Interactive Rapid Climate Signal Detection Software (IRCSD) is a fast climate signal detection tool developed using Dash and Python. For unknown climate signals as input, IRCSD integrates various climate statistical methods, including selecting time ranges, data preprocessing, detrending, and applying different filtering methods and types, to compute the correlation between the signal and about 260 common climate indices (such as atmospheric, oceanic, and sea ice indices, etc.). It utilizes parallel computing to accelerate detection speed and outputs interactive detection results (including signal time series, power spectrum, correlation coefficients, lead-lagged correlation coefficients, sliding correlation coefficient, and Liang-Kleeman Information Flow). IRCSD is designed for researchers in atmospheric science and the public interested in climate change. The goal of IRCSD is to assist in quickly identifying potential source regions of anomalous signals and to enhance the efficiency of climate change research.',
             style={
                 'backgroundColor': '#f0f0f0',  # 背景颜色
                 'border': '2px solid #ccc',    # 边框样式
@@ -168,10 +180,10 @@ app.layout = html.Div([
                     id='RI_time_scale_dropdown',
                     options=[
                         {'label': 'Annual Average', 'value': 'year'},
-                        {'label': 'Seasonal Average (MAM)', 'value': 'mam'},
-                        {'label': 'Seasonal Average (JJA)', 'value': 'jja'},
-                        {'label': 'Seasonal Average (SON)', 'value': 'son'},
-                        {'label': 'Seasonal Average (DJF)', 'value': 'djf'},
+                        {'label': 'Seasonal Average (MAM)', 'value': 'MAM'},
+                        {'label': 'Seasonal Average (JJA)', 'value': 'JJA'},
+                        {'label': 'Seasonal Average (SON)', 'value': 'SON'},
+                        {'label': 'Seasonal Average (DJF)', 'value': 'DJF'},
                         {'label': 'Original Time', 'value': 'origin'}
                     ],
                     value='year',
@@ -184,10 +196,10 @@ app.layout = html.Div([
                     id='CI_time_scale_dropdown',
                     options=[
                         {'label': 'Annual Average', 'value': 'year'},
-                        {'label': 'Seasonal Average (MAM)', 'value': 'mam'},
-                        {'label': 'Seasonal Average (JJA)', 'value': 'jja'},
-                        {'label': 'Seasonal Average (SON)', 'value': 'son'},
-                        {'label': 'Seasonal Average (DJF)', 'value': 'djf'},
+                        {'label': 'Seasonal Average (MAM)', 'value': 'MAM'},
+                        {'label': 'Seasonal Average (JJA)', 'value': 'JJA'},
+                        {'label': 'Seasonal Average (SON)', 'value': 'SON'},
+                        {'label': 'Seasonal Average (DJF)', 'value': 'DJF'},
                         {'label': 'Original Time', 'value': 'origin'}
                     ],
                     value='year',
@@ -632,13 +644,13 @@ def update_graphs(n_clicks, stored_data, signal_yrST0, signal_yrED0, RI_time_sel
             # 处理RI时间尺度选择的逻辑
             if RI_time_scale == 'year':
                 RI_freq = gc.calendar_average(RI_sel, freq="year")
-            elif RI_time_scale == 'mam':
+            elif RI_time_scale == 'MAM':
                 RI_freq = gc.climatologies.month_to_season(RI_sel, 'MAM')
-            elif RI_time_scale == 'jja':
+            elif RI_time_scale == 'JJA':
                 RI_freq = gc.climatologies.month_to_season(RI_sel, 'JJA')
-            elif RI_time_scale == 'son':
+            elif RI_time_scale == 'SON':
                 RI_freq = gc.climatologies.month_to_season(RI_sel, 'SON')
-            elif RI_time_scale == 'djf':
+            elif RI_time_scale == 'DJF':
                 RI_freq = gc.climatologies.month_to_season(RI_sel, 'DJF')
             elif RI_time_scale == 'origin':
                 RI_freq = RI_sel
@@ -647,13 +659,13 @@ def update_graphs(n_clicks, stored_data, signal_yrST0, signal_yrED0, RI_time_sel
             # 处理CI时间尺度选择的逻辑
             if CI_time_scale == 'year':
                 CI_freq = gc.calendar_average(CI_sel, freq="year")
-            elif CI_time_scale == 'mam':
+            elif CI_time_scale == 'MAM':
                 CI_freq = gc.climatologies.month_to_season(CI_sel, 'MAM')
-            elif CI_time_scale == 'jja':
+            elif CI_time_scale == 'JJA':
                 CI_freq = gc.climatologies.month_to_season(CI_sel, 'JJA')
-            elif CI_time_scale == 'son':
+            elif CI_time_scale == 'SON':
                 CI_freq = gc.climatologies.month_to_season(CI_sel, 'SON')
-            elif CI_time_scale == 'djf':
+            elif CI_time_scale == 'DJF':
                 CI_freq = gc.climatologies.month_to_season(CI_sel, 'DJF')
             elif CI_time_scale == 'origin':
                 CI_freq = CI_sel
@@ -1301,5 +1313,5 @@ def update_graphs(n_clicks, stored_data, signal_yrST0, signal_yrED0, RI_time_sel
 # 运行 Dash 应用
 if __name__ == '__main__':  
     webbrowser.open("http://127.0.0.1:8050")# 自动打开web
-    app.run_server(debug=True, port=8050) #本地离线运行
-    # app.run_server(debug=True, host='0.0.0.0', port=8050) #服务器在线运行
+    app.run(debug=True, port=8050) #本地离线运行
+    # app.run(debug=True, host='0.0.0.0', port=8050) #服务器在线运行

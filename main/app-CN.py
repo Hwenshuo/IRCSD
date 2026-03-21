@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 # 数据分析模块 #
 import os
 import numpy as np
